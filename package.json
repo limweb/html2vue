@@ -1,0 +1,46 @@
+{
+    "name": "html-to-vue-components",
+    "version": "1.0.0",
+    "description": "Converts HTML pages into Vue components",
+    "main": "lib/index.js",
+    "browser": "dist/html2vue.js",
+    "bin": {
+        "html2vue": "lib/cli.js"
+    },
+    "scripts": {
+        "test": "jest test",
+        "build:example": "webpack -p",
+        "build:browser": "webpack -p --config webpack.browser.js"
+    },
+    "keywords": [
+        "posthtml",
+        "html",
+        "vue",
+        "component",
+        "babel"
+    ],
+    "author": "Thongchai Lim <limweb@hotmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "babel-generator": "^6.3.26",
+        "babel-traverse": "^6.3.26",
+        "babel-types": "^6.3.24",
+        "babylon": "^6.3.26",
+        "chalk": "2.3.0",
+        "glob": "^7.1.2",
+        "jsdom-no-contextify": "^3.1.0",
+        "meow": "4.0.0",
+        "mkdirp": "^0.5.1",
+        "posthtml": "0.11.2",
+        "posthtml-parser": "0.4.0",
+        "posthtml-render": "^1.0.6",
+        "prettier": "^1.10.2",
+    },
+    "devDependencies": {
+        "babel-preset-es2015": "^6.24.1",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "jest": "22.1.4",
+        "webpack": "^3.10.0"
+    }
+}
